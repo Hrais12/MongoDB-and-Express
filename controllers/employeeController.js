@@ -34,7 +34,7 @@ const updateEmployee = async (req,res)=>{
     const employee = await Employee.findByIdAndUpdate(employeeId,{
         name: name,
         position:position
-    })
+    },{new:true})
     res.json({employee : employee})
 }
 

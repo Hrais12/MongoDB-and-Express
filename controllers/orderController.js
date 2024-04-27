@@ -37,7 +37,7 @@ const updateOrder = async (req,res)=>{
         customerName: customerName,
         item: item,
         price: price
-    })
+    },{new:true})
     res.json({order : order})
 }
 

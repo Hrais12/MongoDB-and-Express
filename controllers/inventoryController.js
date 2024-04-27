@@ -36,7 +36,7 @@ const updateInventory = async (req,res)=>{
         name : name,
         category : category,
         quantity : quantity
-    })
+    },{new:true})
     res.json({inventory : inventory})
 }
 
